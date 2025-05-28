@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pinPay - System samoobsługowy dla gastronomii</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0055FF',
+            accent: '#F8BBD0'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-black font-sans leading-normal">
+  <!-- Hero Section -->
+  <section id="hero" class="pt-20 pb-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-primary">Samoobsługowy system zamówień i płatności dla gastronomii</h1>
+    <p class="mt-4 text-lg md:text-xl">Przyspiesz obsługę, zwiększ przychody, podnieś komfort gości</p>
+    <a href="#contact" class="mt-8 inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-accent transition">Wypróbuj za darmo</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 md:px-20">
+    <h2 class="text-3xl font-semibold text-center text-primary">Co to jest O.pinPay?</h2>
+    <p class="mt-6 max-w-3xl mx-auto text-center">
+      O.pinPay to innowacyjny, kompleksowy system samoobsługowy dla branży gastronomicznej. Nasze tablety przy stolikach pozwalają klientom samodzielnie przeglądać menu, składać zamówienia oraz – w wyższych pakietach – realizować płatności bez pośrednictwa kelnera.
+      Dzięki O.pinPay eliminujesz błędy w zamówieniach, skracasz czas obsługi i zwiększasz rotację stolików, co przekłada się na realny wzrost przychodów.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-gray-50 px-4 md:px-20">
+    <h2 class="text-3xl font-semibold text-center text-primary">Kluczowe funkcje i zalety</h2>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-4">Wersja podstawowa (MVP)</h3>
+        <ul class="space-y-3">
+          <li><strong>Przeglądanie menu:</strong> Atrakcyjna prezentacja dań z filtrami.</li>
+          <li><strong>Składanie zamówień:</strong> Intuicyjny interfejs, zamówienia trafiają do kuchni i POS.</li>
+          <li><strong>Przycisk „Wezwij kelnera”:</strong> Jedno kliknięcie, a kelner przy stoliku.</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-4">Wersje rozszerzone</h3>
+        <ul class="space-y-3">
+          <li><strong>Moduł płatności kartą:</strong> Karty, BLIK, Apple/Google Pay.</li>
+          <li><strong>System ocen i recenzji:</strong> Opinie klientów i ulubione pozycje.</li>
+          <li><strong>Moduł analityczny AI:</strong> Rekomendacje, promocje, raporty sprzedaży.</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md flex items-center justify-center">
+        <img src="https://via.placeholder.com/150" alt="Ikona funkcji" class="w-24 h-24">
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works Section -->
+  <section id="how-it-works" class="py-16 px-4 md:px-20">
+    <h2 class="text-3xl font-semibold text-center text-primary">Jak to działa</h2>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-bold">1</div>
+        <h3 class="mt-4 font-semibold">Wybierz z menu</h3>
+        <p class="mt-2">Przeglądaj dania z opisami i zdjęciami, filtruj po kategoriach i alergiach.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-bold">2</div>
+        <h3 class="mt-4 font-semibold">Złóż zamówienie</h3>
+        <p class="mt-2">Dodaj pozycje do koszyka i wyślij — zamówienie ląduje bezpośrednio w kuchni.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-bold">3</div>
+        <h3 class="mt-4 font-semibold">Płać lub wezwij kelnera</h3>
+        <p class="mt-2">Zapłać przy stoliku lub poproś o obsługę jednym kliknięciem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & CTA Section -->
+  <section id="pricing" class="py-16 bg-gray-50 px-4 md:px-20 text-center">
+    <h2 class="text-3xl font-semibold text-primary">Gotowy na przyspieszenie obsługi?</h2>
+    <p class="mt-4 max-w-xl mx-auto">Jednorazowa opłata instalacyjna + miesięczny abonament. Skontaktuj się z nami, a przygotujemy ofertę dopasowaną do Twojego lokalu.</p>
+    <a href="#contact" class="mt-6 inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-accent transition">Skontaktuj się</a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="py-8 bg-white border-t border-gray-200 text-center">
+    <p>Pintech – Paweł Rusinow</p>
+    <p>ul. Trzebińska 5, 60-003 Poznań | NIP: 7781437869</p>
+    <div class="mt-4 space-x-4">
+      <a href="#" class="text-primary hover:underline">Polityka prywatności</a>
+      <a href="#" class="text-primary hover:underline">Regulamin</a>
+      <a href="#" class="text-primary hover:underline">Facebook</a>
+      <a href="#" class="text-primary hover:underline">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
