@@ -1,106 +1,201 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pinPay - System samoobsługowy dla gastronomii</title>
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0055FF',
-            accent: '#F8BBD0'
-          }
-        }
-      }
-    }
-  </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    span.s1 {font-kerning: none}
+  </style>
 </head>
-<body class="bg-white text-black font-sans leading-normal">
-  <!-- Hero Section -->
-  <section id="hero" class="pt-20 pb-16 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold text-primary">Samoobsługowy system zamówień i płatności dla gastronomii</h1>
-    <p class="mt-4 text-lg md:text-xl">Przyspiesz obsługę, zwiększ przychody, podnieś komfort gości</p>
-    <a href="#contact" class="mt-8 inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-accent transition">Wypróbuj za darmo</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-16 px-4 md:px-20">
-    <h2 class="text-3xl font-semibold text-center text-primary">Co to jest O.pinPay?</h2>
-    <p class="mt-6 max-w-3xl mx-auto text-center">
-      O.pinPay to innowacyjny, kompleksowy system samoobsługowy dla branży gastronomicznej. Nasze tablety przy stolikach pozwalają klientom samodzielnie przeglądać menu, składać zamówienia oraz – w wyższych pakietach – realizować płatności bez pośrednictwa kelnera.
-      Dzięki O.pinPay eliminujesz błędy w zamówieniach, skracasz czas obsługi i zwiększasz rotację stolików, co przekłada się na realny wzrost przychodów.
-    </p>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="py-16 bg-gray-50 px-4 md:px-20">
-    <h2 class="text-3xl font-semibold text-center text-primary">Kluczowe funkcje i zalety</h2>
-    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold mb-4">Wersja podstawowa (MVP)</h3>
-        <ul class="space-y-3">
-          <li><strong>Przeglądanie menu:</strong> Atrakcyjna prezentacja dań z filtrami.</li>
-          <li><strong>Składanie zamówień:</strong> Intuicyjny interfejs, zamówienia trafiają do kuchni i POS.</li>
-          <li><strong>Przycisk „Wezwij kelnera”:</strong> Jedno kliknięcie, a kelner przy stoliku.</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold mb-4">Wersje rozszerzone</h3>
-        <ul class="space-y-3">
-          <li><strong>Moduł płatności kartą:</strong> Karty, BLIK, Apple/Google Pay.</li>
-          <li><strong>System ocen i recenzji:</strong> Opinie klientów i ulubione pozycje.</li>
-          <li><strong>Moduł analityczny AI:</strong> Rekomendacje, promocje, raporty sprzedaży.</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-md flex items-center justify-center">
-        <img src="https://via.placeholder.com/150" alt="Ikona funkcji" class="w-24 h-24">
-      </div>
-    </div>
-  </section>
-
-  <!-- How it Works Section -->
-  <section id="how-it-works" class="py-16 px-4 md:px-20">
-    <h2 class="text-3xl font-semibold text-center text-primary">Jak to działa</h2>
-    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <div>
-        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-bold">1</div>
-        <h3 class="mt-4 font-semibold">Wybierz z menu</h3>
-        <p class="mt-2">Przeglądaj dania z opisami i zdjęciami, filtruj po kategoriach i alergiach.</p>
-      </div>
-      <div>
-        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-bold">2</div>
-        <h3 class="mt-4 font-semibold">Złóż zamówienie</h3>
-        <p class="mt-2">Dodaj pozycje do koszyka i wyślij — zamówienie ląduje bezpośrednio w kuchni.</p>
-      </div>
-      <div>
-        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto text-2xl font-bold">3</div>
-        <h3 class="mt-4 font-semibold">Płać lub wezwij kelnera</h3>
-        <p class="mt-2">Zapłać przy stoliku lub poproś o obsługę jednym kliknięciem.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing & CTA Section -->
-  <section id="pricing" class="py-16 bg-gray-50 px-4 md:px-20 text-center">
-    <h2 class="text-3xl font-semibold text-primary">Gotowy na przyspieszenie obsługi?</h2>
-    <p class="mt-4 max-w-xl mx-auto">Jednorazowa opłata instalacyjna + miesięczny abonament. Skontaktuj się z nami, a przygotujemy ofertę dopasowaną do Twojego lokalu.</p>
-    <a href="#contact" class="mt-6 inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-accent transition">Skontaktuj się</a>
-  </section>
-
-  <!-- Footer Section -->
-  <footer id="contact" class="py-8 bg-white border-t border-gray-200 text-center">
-    <p>Pintech – Paweł Rusinow</p>
-    <p>ul. Trzebińska 5, 60-003 Poznań | NIP: 7781437869</p>
-    <div class="mt-4 space-x-4">
-      <a href="#" class="text-primary hover:underline">Polityka prywatności</a>
-      <a href="#" class="text-primary hover:underline">Regulamin</a>
-      <a href="#" class="text-primary hover:underline">Facebook</a>
-      <a href="#" class="text-primary hover:underline">Instagram</a>
-    </div>
-  </footer>
+<body>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;!DOCTYPE html&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;html lang="pl"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;head&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;title&gt;O.pinPay - System samoobsługowy dla gastronomii&lt;/title&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;script&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>tailwind.config = {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>theme: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>extend: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>colors: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>primary: '#0dadec',</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>accent: '#F8BBD0',</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>darkBg: '#1F2541'</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>},</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>boxShadow: {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">            </span>neu: '8px 8px 16px rgba(0,0,0,0.08), -8px -8px 16px rgba(255,255,255,0.8)'</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/script&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/head&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;body class="bg-white font-sans text-black"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Navbar --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;header class="bg-darkBg text-white"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;nav class="container mx-auto flex items-center justify-between p-6"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="flex items-center space-x-2"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="w-8 h-8 bg-white rounded-full flex items-center justify-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;span class="text-darkBg font-bold"&gt;O&lt;/span&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;span class="text-xl font-semibold"&gt;pinPay&lt;/span&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;ul class="hidden md:flex space-x-8 text-sm"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#about"&gt;O projekcie&lt;/a&gt;&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#features"&gt;Funkcje&lt;/a&gt;&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#how-it-works"&gt;Jak to działa&lt;/a&gt;&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="#contact" class="px-4 py-2 bg-primary rounded-full hover:bg-accent transition"&gt;Wypróbuj&lt;/a&gt;&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/ul&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/nav&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/header&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Hero --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section class="relative bg-darkBg pt-20 pb-32 overflow-hidden"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto flex flex-col lg:flex-row items-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="lg:w-1/2 text-center lg:text-left space-y-6 text-white"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h1 class="text-4xl md:text-5xl font-bold"&gt;Samoobsługowy system zamówień i płatności dla gastronomii&lt;/h1&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;p class="text-lg"&gt;Przyspiesz obsługę, zwiększ przychody i podnieś komfort gości&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a href="#contact" class="inline-block px-8 py-3 bg-primary rounded-full font-semibold hover:bg-accent transition"&gt;Wypróbuj za darmo&lt;/a&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="w-64 h-96 bg-white rounded-3xl shadow-neu p-4 relative"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;!-- Placeholder for tablet image --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/240x360" alt="Tablet UI" class="w-full h-full object-cover rounded-2xl" /&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;svg class="relative block w-full h-40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 120"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;path d="M0,0 C400,100 800,0 1200,100 L1200,0 L0,0 Z" fill="#F8BBD0"&gt;&lt;/path&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/svg&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- About --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="about" class="relative bg-white pt-20 pb-20"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto grid lg:grid-cols-2 gap-10 items-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="space-y-4"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h2 class="text-3xl font-semibold text-primary"&gt;Co to jest O.pinPay?&lt;/h2&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;p&gt;O.pinPay to innowacyjny system samoobsługowy dla gastronomii, eliminujący błędy w zamówieniach, skracający czas obsługi i zwiększający rotację stolików, co przekłada się na realny wzrost przychodów.&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="bg-white rounded-3xl shadow-neu p-6"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;img src="https://via.placeholder.com/400x300" alt="Tablet at table" class="rounded-2xl w-full object-cover" /&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;svg class="relative block w-full h-40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 120"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;path d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z" fill="#F8BBD0"&gt;&lt;/path&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/svg&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Features &amp; Profits --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="features" class="relative bg-gradient-to-b from-[#F8BBD0] to-white pt-20 pb-20"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto space-y-12"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="grid md:grid-cols-3 gap-8"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-2xl shadow-neu p-8 text-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="" class="mx-auto mb-4" /&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold mb-2"&gt;Przeglądanie menu&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-2xl shadow-neu p-8 text-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="" class="mx-auto mb-4" /&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold mb-2"&gt;Składanie zamówień&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-2xl shadow-neu p-8 text-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="" class="mx-auto mb-4" /&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold mb-2"&gt;Wezwij kelnera&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="grid md:grid-cols-3 gap-8"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-2xl shadow-neu p-8 text-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;span class="text-4xl"&gt;🕒&lt;/span&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold mt-2"&gt;Skrócenie obsługi&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;Wyższa efektywność personelu&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-2xl shadow-neu p-8 text-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;span class="text-4xl"&gt;🔄&lt;/span&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold mt-2"&gt;Zwiększona rotacja&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;Więcej rezerwacji dziennie&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="bg-white rounded-2xl shadow-neu p-8 text-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;span class="text-4xl"&gt;📈&lt;/span&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold mt-2"&gt;Mniej błędów&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;p&gt;Lepsze doświadczenie gości&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Packages &amp; AI --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="packages" class="bg-white pt-20 pb-20"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto grid md:grid-cols-2 gap-10"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="bg-white rounded-3xl shadow-neu p-8"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h3 class="text-2xl font-semibold mb-4"&gt;Standard&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;ul class="list-disc space-y-2 ml-5"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;li&gt;Menu + filtry&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;li&gt;Zamówienia do kuchni&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;li&gt;Przycisk wezwij kelnera&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/ul&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="bg-gradient-to-br from-white to-[#F8BBD0] rounded-3xl shadow-neu p-8"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;h3 class="text-2xl font-semibold mb-4 flex items-center"&gt;&lt;span class="mr-2"&gt;🤖&lt;/span&gt;Premium + AI&lt;/h3&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;ul class="list-disc space-y-2 ml-5"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;li&gt;Dynamiczne rekomendacje dań&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;li&gt;Raporty sprzedaży i prognozy&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;li&gt;Automatyczne promocje sezonowe&lt;/li&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/ul&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- How It Works --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="how-it-works" class="relative bg-gradient-to-b from-white to-[#F8BBD0] pt-20 pb-20"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto ribbon text-center py-16"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="grid grid-cols-3 gap-8 items-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div&gt;&lt;span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12"&gt;1&lt;/span&gt;&lt;p class="mt-2"&gt;Wybierz z menu&lt;/p&gt;&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div&gt;&lt;span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12"&gt;2&lt;/span&gt;&lt;p class="mt-2"&gt;Złóż zamówienie&lt;/p&gt;&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div&gt;&lt;span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12"&gt;3&lt;/span&gt;&lt;p class="mt-2"&gt;Płać lub wezwij kelnera&lt;/p&gt;&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Contact &amp; CTA --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;section id="contact" class="bg-gradient-to-t from-[#F8BBD0] to-white pt-20 pb-20 text-center"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h2 class="text-3xl font-semibold text-primary mb-4"&gt;Gotowy na przyspieszenie obsługi?&lt;/h2&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;a href="#" class="px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-accent transition"&gt;Skontaktuj się&lt;/a&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;!-- Footer --&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;footer class="bg-white pt-10 pb-6"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto text-center space-y-2"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p&gt;Pintech – Paweł Rusinow | ul. Trzebińska 5, 60-003 Poznań | NIP: 7781437869&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="flex justify-center space-x-4 mt-2"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a href="#" class="text-primary hover:text-accent"&gt;FB&lt;/a&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;a href="#" class="text-primary hover:text-accent"&gt;IG&lt;/a&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/footer&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000; min-height: 23.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;style&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.ribbon {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>clip-path: polygon(</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>0 10%, 5% 0,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>20% 0, 25% 10%,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>40% 10%, 45% 0,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>60% 0, 65% 10%,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>80% 10%, 85% 0,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>100% 0, 100% 100%,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>0 100%</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/style&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/body&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/html&gt;</b></span></h1>
 </body>
 </html>
