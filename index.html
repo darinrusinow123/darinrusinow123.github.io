@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Order & PinPay – zamów i zapłać!</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -13,98 +13,120 @@
       theme: {
         fontFamily: { sans: ['Inter','sans-serif'] },
         extend: {
-          colors: { primary: '#0dadec', accent: '#F8BBD0', darkBg: '#1F2541', lightBg: '#F9FAFB' },
-          boxShadow: { neu: '6px 6px 16px rgba(0,0,0,0.06), -6px -6px 16px rgba(255,255,255,0.8)' }
+          colors: {
+            primary: '#0dadec',
+            accent: '#F8BBD0',
+            darkBg: '#1F2541',
+            lightBg: '#F9FAFB'
+          },
+          boxShadow: {
+            neu: '8px 8px 24px rgba(0,0,0,0.08), -8px -8px 24px rgba(255,255,255,0.8)'
+          }
         }
       }
     }
   </script>
 </head>
-<body class="antialiased bg-white font-sans text-black">
+<body class="bg-white font-sans text-black antialiased">
   <!-- Navbar -->
-  <header class="fixed inset-x-0 top-0 z-50">
-    <nav class="container mx-auto flex items-center justify-between py-6 px-4 bg-gradient-to-b from-black/70 to-transparent">
-      <a href="#hero"><img src="assets/logo-transparent.png" alt="O.pinPay" class="h-8"></a>
-      <ul class="hidden md:flex gap-8 text-sm text-white">
-        <li><a href="#hero" class="hover:underline">Home</a></li>
-        <li><a href="#about" class="hover:underline">O projekcie</a></li>
-        <li><a href="#features" class="hover:underline">Funkcje</a></li>
-        <li><a href="#how-it-works" class="hover:underline">Jak to działa</a></li>
-        <li><a href="#contact" class="px-4 py-2 bg-primary rounded-full hover:bg-accent transition">Wypróbuj</a></li>
+  <header class="fixed inset-x-0 top-0 z-50 bg-darkBg bg-opacity-80 backdrop-blur-lg">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="#hero">
+        <img src="assets/logo-transparent.png" alt="O.pinPay" class="h-8 w-auto" />
+      </a>
+      <ul class="hidden md:flex space-x-8 text-white">
+        <li><a href="#hero" class="hover:text-primary transition">Home</a></li>
+        <li><a href="#about" class="hover:text-primary transition">O projekcie</a></li>
+        <li><a href="#features" class="hover:text-primary transition">Funkcje</a></li>
+        <li><a href="#how-it-works" class="hover:text-primary transition">Jak to działa</a></li>
+        <li><a href="#contact" class="px-4 py-2 bg-primary rounded-full hover:bg-opacity-90 transition">Wypróbuj</a></li>
       </ul>
+      <button class="md:hidden text-white focus:outline-none">☰</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="relative bg-darkBg text-white pt-32 pb-40 overflow-hidden">
-    <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12 px-4">
+  <!-- Hero -->
+  <section id="hero" class="relative pt-32 pb-48 bg-darkBg text-white overflow-hidden">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12 px-6">
       <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
-        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Order & PinPay<br>– zamów i zapłać!</h1>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">Order & PinPay<br>– zamów i zapłać!</h1>
         <p class="text-lg text-gray-200">Przyspiesz obsługę, zwiększ przychody i podnieś komfort gości</p>
-        <a href="#contact" class="inline-block mt-4 px-8 py-3 bg-primary rounded-full font-semibold hover:bg-accent transition">Wypróbuj za darmo</a>
+        <a href="#contact" class="inline-block px-8 py-3 bg-primary rounded-full font-semibold hover:bg-opacity-90 transition">Wypróbuj za darmo</a>
       </div>
       <div class="lg:w-1/2 flex justify-center">
         <!-- Hero image placeholder -->
         <div class="w-80 h-96 bg-lightBg rounded-3xl shadow-neu transform rotate-6"></div>
       </div>
     </div>
-    <!-- Wave divider -->
+    <!-- Curved wave SVG -->
     <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
       <svg class="w-full h-32" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z" fill="#F8BBD0" />
+        <path d="M0,0 C400,80 800,0 1200,80 L1200,120 L0,120 Z" fill="#F8BBD0" />
       </svg>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="relative bg-white pt-24 pb-24">
+  <!-- About -->
+  <section id="about" class="relative bg-lightBg pt-24 pb-24">
     <!-- Top wave -->
-    <div class="absolute top-0 left-0 w-full overflow-hidden leading-none"><svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,120 C300,20 900,120 1200,20 L1200,120 L0,120 Z" fill="#F8BBD0" /></svg></div>
-    <div class="container mx-auto grid lg:grid-cols-2 gap-16 px-4 items-center">
+    <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
+      <svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 C300,20 900,120 1200,20 L1200,120 L0,120 Z" fill="#F9FAFB" />
+      </svg>
+    </div>
+
+    <div class="container mx-auto grid lg:grid-cols-2 gap-16 px-6 items-center">
       <div class="space-y-6">
         <h2 class="text-3xl font-bold text-primary">Co to jest O.pinPay?</h2>
         <p class="text-gray-700">O.pinPay to kompleksowy system samoobsługowy dla gastronomii. Tablety przy stolikach pozwalają gościom przeglądać menu, składać zamówienia oraz – w wyższych pakietach – realizować płatności bez udziału kelnera.</p>
       </div>
       <div class="flex justify-center">
         <!-- About image placeholder -->
-        <div class="w-96 h-64 bg-lightBg rounded-3xl shadow-neu"></div>
+        <div class="w-96 h-64 bg-white rounded-3xl shadow-neu"></div>
       </div>
     </div>
+
     <!-- Bottom wave -->
-    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none"><svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z" fill="#FFFFFF" /></svg></div>
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+      <svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z" fill="#FFFFFF" />
+      </svg>
+    </div>
   </section>
 
   <!-- Features & Profits -->
-  <section id="features" class="bg-lightBg py-24">
-    <div class="container mx-auto px-4 space-y-20">
-      <div class="relative p-8">
-        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl"></div>
+  <section id="features" class="py-24">
+    <div class="container mx-auto px-6 space-y-16">
+      <!-- Features -->
+      <div class="relative">
+        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl transform scale-105"></div>
         <div class="relative grid md:grid-cols-3 gap-8">
-          <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
+          <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <h3 class="mt-4 font-semibold">Przeglądanie menu</h3>
           </div>
-          <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
+          <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <h3 class="mt-4 font-semibold">Składanie zamówień</h3>
           </div>
-          <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
+          <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <h3 class="mt-4 font-semibold">Wezwij kelnera</h3>
           </div>
         </div>
       </div>
-      <div class="relative p-8">
-        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl"></div>
+      <!-- Profits -->
+      <div class="relative">
+        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl transform scale-105"></div>
         <div class="relative grid md:grid-cols-3 gap-8">
-          <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
+          <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <span class="text-4xl">🕒</span>
             <h3 class="mt-2 font-semibold">Skrócenie obsługi</h3>
             <p class="text-gray-600">Większa rotacja stolików</p>
           </div>
-          <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
+          <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <span class="text-4xl">🔄</span>
             <h3 class="mt-2 font-semibold">Mniej błędów</h3>
             <p class="text-gray-600">Lepsze doświadczenie</p>
           </div>
-          <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
+          <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <span class="text-4xl">📈</span>
             <h3 class="mt-2 font-semibold">AI Premium</h3>
             <p class="text-gray-600">Dynamiczne rekomendacje</p>
@@ -114,32 +136,31 @@
     </div>
   </section>
 
-  <!-- How It Works Section -->
-  <section id="how-it-works" class="relative bg-white py-24">
-    <div class="relative overflow-hidden ribbon">
-      <div class="container mx-auto px-4 py-16 text-center">
-        <div class="grid md:grid-cols-3 gap-8">
-          <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">1</span><p class="mt-3">Wybierz z menu</p></div>
-          <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">2</span><p class="mt-3">Złóż zamówienie</p></div>
-          <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">3</span><p class="mt-3">Płać lub wezwij kelnera</p></div>
-        </div>
+  <!-- How It Works -->
+  <section id="how-it-works" class="relative bg-lightBg py-24">
+    <div class="absolute inset-0 bg-accent opacity-10"></div>
+    <div class="container mx-auto px-6 relative text-center">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">1</span><p class="mt-3">Wybierz z menu</p></div>
+        <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">2</span><p class="mt-3">Złóż zamówienie</p></div>
+        <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">3</span><p class="mt-3">Płać lub wezwij kelnera</p></div>
       </div>
     </div>
   </section>
 
   <!-- Contact & CTA -->
   <section id="contact" class="bg-darkBg text-white py-24">
-    <div class="container mx-auto px-4 text-center space-y-6">
+    <div class="container mx-auto px-6 text-center space-y-6">
       <h2 class="text-3xl font-bold">Gotowy na przyspieszenie obsługi?</h2>
-      <a href="#" class="px-8 py-3 bg-primary rounded-full font-semibold hover:bg-accent transition">Skontaktuj się</a>
+      <a href="#" class="px-8 py-3 bg-primary rounded-full font-semibold hover:bg-opacity-90 transition">Skontaktuj się</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-white py-8">
-    <div class="container mx-auto px-4 text-center text-gray-600 space-y-2">
+    <div class="container mx-auto px-6 text-center text-gray-600 space-y-2">
       <p>Pintech – Paweł Rusinow | ul. Trzebińska 5, 60-003 Poznań | NIP: 7781437869</p>
-      <div class="flex justify-center gap-4">
+      <div class="flex justify-center gap-6">
         <a href="#" class="text-primary hover:underline">Facebook</a>
         <a href="#" class="text-primary hover:underline">Instagram</a>
       </div>
