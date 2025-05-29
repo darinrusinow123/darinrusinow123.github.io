@@ -19,29 +19,12 @@
       }
     }
   </script>
-  <style>
-    /* Hero bottom curve */
-    .hero-curve {
-      clip-path: path('M0,0 C40%,100 60%,0 100%,100 L100%,0 L0,0 Z');
-    }
-    /* About top and bottom curves */
-    .about-top, .about-bottom {
-      clip-path: path('M0,100 C20%,0 80%,100 100%,0 L100%,100 L0,100 Z');
-    }
-    /* Ribbon curve in How it works */
-    .ribbon {
-      clip-path: polygon(0 12%,10% 0,25% 6%,40% 0,60% 4%,75% 0,90% 6%,100% 2%,100% 100%,0 100%);
-    }
-    .features-bg { background: rgba(248,187,208,0.1); border-radius: 2rem; }
-  </style>
 </head>
 <body class="antialiased bg-white font-sans text-black">
-  <!-- Navbar (semi-transparent gradient) -->
-  <header class="fixed top-0 left-0 w-full bg-gradient-to-b from-black/60 via-transparent to-transparent z-50">
-    <nav class="container mx-auto flex items-center justify-between py-6 px-4">
-      <a href="#hero">
-        <img src="assets/logo-transparent.png" alt="O.pinPay" class="h-8">
-      </a>
+  <!-- Navbar -->
+  <header class="fixed inset-x-0 top-0 z-50">
+    <nav class="container mx-auto flex items-center justify-between py-6 px-4 bg-gradient-to-b from-black/70 to-transparent">
+      <a href="#hero"><img src="assets/logo-transparent.png" alt="O.pinPay" class="h-8"></a>
       <ul class="hidden md:flex gap-8 text-sm text-white">
         <li><a href="#hero" class="hover:underline">Home</a></li>
         <li><a href="#about" class="hover:underline">O projekcie</a></li>
@@ -53,47 +36,51 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="relative bg-darkBg text-white pt-32 pb-40 hero-curve overflow-hidden">
+  <section id="hero" class="relative bg-darkBg text-white pt-32 pb-40 overflow-hidden">
     <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12 px-4">
       <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
-        <h1 class="text-5xl md:text-6xl font-extrabold leading-snug">Samoobsługowy system zamówień i płatności dla gastronomii</h1>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Samoobsługowy system<br>zamówień i płatności dla gastronomii</h1>
         <p class="text-lg text-gray-200">Przyspiesz obsługę, zwiększ przychody i podnieś komfort gości</p>
         <a href="#contact" class="inline-block mt-4 px-8 py-3 bg-primary rounded-full font-semibold hover:bg-accent transition">Wypróbuj za darmo</a>
       </div>
       <div class="lg:w-1/2 flex justify-center">
-        <!-- Hero image placeholder with subtle tilt -->
+        <!-- Hero image placeholder -->
         <div class="w-80 h-96 bg-lightBg rounded-3xl shadow-neu transform rotate-6"></div>
       </div>
+    </div>
+    <!-- Wave divider -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+      <svg class="w-full h-32" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z" fill="#F8BBD0" />
+      </svg>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="relative bg-white pt-24 pb-24">
-    <!-- top curve -->
-    <div class="absolute top-0 left-0 w-full h-20 bg-white about-top"></div>
+    <!-- Top wave -->
+    <div class="absolute top-0 left-0 w-full overflow-hidden leading-none"><svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,120 C300,20 900,120 1200,20 L1200,120 L0,120 Z" fill="#F8BBD0" /></svg></div>
     <div class="container mx-auto grid lg:grid-cols-2 gap-16 px-4 items-center">
       <div class="space-y-6">
         <h2 class="text-3xl font-bold text-primary">Co to jest O.pinPay?</h2>
-        <p class="text-gray-700">O.pinPay to kompleksowy system samoobsługowy dla branży gastronomicznej. Tablety przy stolikach pozwalają gościom przeglądać menu, składać zamówienia oraz – w wyższych pakietach – realizować płatności bez udziału kelnera.</p>
+        <p class="text-gray-700">O.pinPay to kompleksowy system samoobsługowy dla gastronomii. Tablety przy stolikach pozwalają gościom przeglądać menu, składać zamówienia oraz – w wyższych pakietach – realizować płatności bez udziału kelnera.</p>
       </div>
       <div class="flex justify-center">
         <!-- About image placeholder -->
         <div class="w-96 h-64 bg-lightBg rounded-3xl shadow-neu"></div>
       </div>
     </div>
-    <!-- bottom divider -->
-    <div class="absolute bottom-0 left-0 w-full h-24 bg-accent about-bottom"></div>
+    <!-- Bottom wave -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none"><svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z" fill="#FFFFFF" /></svg></div>
   </section>
 
-  <!-- Features & Profits Section -->
+  <!-- Features & Profits -->
   <section id="features" class="bg-lightBg py-24">
     <div class="container mx-auto px-4 space-y-20">
-      <!-- Features Row -->
       <div class="relative p-8">
-        <div class="absolute inset-0 features-bg"></div>
+        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl"></div>
         <div class="relative grid md:grid-cols-3 gap-8">
           <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
-            <!-- ICON placeholder -->
             <h3 class="mt-4 font-semibold">Przeglądanie menu</h3>
           </div>
           <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
@@ -104,9 +91,8 @@
           </div>
         </div>
       </div>
-      <!-- Profits Row -->
       <div class="relative p-8">
-        <div class="absolute inset-0 features-bg"></div>
+        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl"></div>
         <div class="relative grid md:grid-cols-3 gap-8">
           <div class="bg-white rounded-2xl shadow-neu p-8 text-center">
             <span class="text-4xl">🕒</span>
@@ -129,17 +115,19 @@
   </section>
 
   <!-- How It Works Section -->
-  <section id="how-it-works" class="relative bg-white py-24 ribbon">
-    <div class="container mx-auto px-4 py-16 text-center">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">1</span><p class="mt-3">Wybierz z menu</p></div>
-        <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">2</span><p class="mt-3">Złóż zamówienie</p></div>
-        <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">3</span><p class="mt-3">Płać lub wezwij kelnera</p></div>
+  <section id="how-it-works" class="relative bg-white py-24">
+    <div class="relative overflow-hidden ribbon">
+      <div class="container mx-auto px-4 py-16 text-center">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">1</span><p class="mt-3">Wybierz z menu</p></div>
+          <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">2</span><p class="mt-3">Złóż zamówienie</p></div>
+          <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">3</span><p class="mt-3">Płać lub wezwij kelnera</p></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact & CTA Section -->
+  <!-- Contact & CTA -->
   <section id="contact" class="bg-darkBg text-white py-24">
     <div class="container mx-auto px-4 text-center space-y-6">
       <h2 class="text-3xl font-bold">Gotowy na przyspieszenie obsługi?</h2>
