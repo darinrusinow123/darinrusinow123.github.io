@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Order & PinPay – zamów i zapłać!?</title>
+  <title>Order & PinPay – zamów i zapłać!</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <!-- Tailwind CSS -->
@@ -26,14 +26,18 @@
       }
     }
   </script>
+  <style>
+    /* Hero bottom wave */
+    #hero svg.wave-path path {
+      transition: d 0.3s ease;
+    }
+  </style>
 </head>
 <body class="bg-white font-sans text-black antialiased">
   <!-- Navbar -->
   <header class="fixed inset-x-0 top-0 z-50 bg-darkBg bg-opacity-80 backdrop-blur-lg">
     <nav class="container mx-auto flex items-center justify-between py-4 px-6">
-      <a href="#hero">
-        <img src="assets/logo-transparent.png" alt="O.pinPay" class="h-8 w-auto" />
-      </a>
+      <a href="#hero"><img src="assets/przezroczyste.png" alt="Order & PinPay logo" class="h-8" /></a>
       <ul class="hidden md:flex space-x-8 text-white">
         <li><a href="#hero" class="hover:text-primary transition">Home</a></li>
         <li><a href="#about" class="hover:text-primary transition">O projekcie</a></li>
@@ -58,22 +62,18 @@
         <div class="w-80 h-96 bg-lightBg rounded-3xl shadow-neu transform rotate-6"></div>
       </div>
     </div>
-    <!-- Curved wave SVG -->
-    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-      <svg class="w-full h-32" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0 C400,80 800,0 1200,80 L1200,120 L0,120 Z" fill="#F8BBD0" />
-      </svg>
-    </div>
+    <!-- Custom dynamic wave divider -->
+    <svg id="hero-wave" class="absolute bottom-0 left-0 w-full h-32 wave-path" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0 0 C300 120 900 0 1200 100 L1200 120 L0 120 Z" fill="#F8BBD0" />
+    </svg>
   </section>
 
   <!-- About -->
   <section id="about" class="relative bg-lightBg pt-24 pb-24">
     <!-- Top wave -->
-    <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
-      <svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,120 C300,20 900,120 1200,20 L1200,120 L0,120 Z" fill="#F9FAFB" />
-      </svg>
-    </div>
+    <svg class="absolute top-0 left-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0 120 C400 0 800 120 1200 20 L1200 120 L0 120 Z" fill="#F9FAFB" />
+    </svg>
 
     <div class="container mx-auto grid lg:grid-cols-2 gap-16 px-6 items-center">
       <div class="space-y-6">
@@ -87,19 +87,16 @@
     </div>
 
     <!-- Bottom wave -->
-    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-      <svg class="w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z" fill="#FFFFFF" />
-      </svg>
-    </div>
+    <svg class="absolute bottom-0 left-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0 0 C300 100 900 0 1200 100 L1200 120 L0 120 Z" fill="#FFFFFF" />
+    </svg>
   </section>
 
   <!-- Features & Profits -->
-  <section id="features" class="py-24">
-    <div class="container mx-auto px-6 space-y-16">
-      <!-- Features -->
+  <section id="features" class="py-24 bg-white">
+    <div class="container mx-auto px-6 grid gap-16">
       <div class="relative">
-        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl transform scale-105"></div>
+        <div class="absolute inset-0 bg-accent opacity-15 rounded-3xl transform scale-105"></div>
         <div class="relative grid md:grid-cols-3 gap-8">
           <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <h3 class="mt-4 font-semibold">Przeglądanie menu</h3>
@@ -112,9 +109,8 @@
           </div>
         </div>
       </div>
-      <!-- Profits -->
       <div class="relative">
-        <div class="absolute inset-0 bg-accent opacity-20 rounded-3xl transform scale-105"></div>
+        <div class="absolute inset-0 bg-accent opacity-15 rounded-3xl transform scale-105"></div>
         <div class="relative grid md:grid-cols-3 gap-8">
           <div class="bg-white rounded-2xl shadow-neu p-8 text-center hover:shadow-xl transition">
             <span class="text-4xl">🕒</span>
@@ -138,7 +134,6 @@
 
   <!-- How It Works -->
   <section id="how-it-works" class="relative bg-lightBg py-24">
-    <div class="absolute inset-0 bg-accent opacity-10"></div>
     <div class="container mx-auto px-6 relative text-center">
       <div class="grid md:grid-cols-3 gap-8">
         <div><span class="inline-block bg-primary text-white rounded-full w-12 h-12 leading-12">1</span><p class="mt-3">Wybierz z menu</p></div>
